@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+    <title>웹코딩 평가</title>
+
+    <style>
+        body {
+            background: #dddcdb;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #top {
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            background: black;
+            border: 1px solid black;
+            top: 0;
+            left: 0;
+        }
+
+        #top h3 {
+            color: white;
+            font-weight: 800;
+            margin-left: 350px;
+            margin-top: 10px;
+        }
+
+        #top .left a {
+            float: left;
+            font-size: 15px;
+            font-weight: 800;
+            text-decoration: none;
+            color: white;
+            margin-top: -43px;
+            margin-left: 500px;
+        }
+
+        #top .right a {
+            float: right;
+            font-size: 15px;
+            font-weight: 800;
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            margin-top: -40px;
+            margin-right: 50px;
+            height: 50px;
+        }
+
+
+        .top2 {
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            margin-top: 50px;
+            background: silver;
+            top: 0;
+            left: 0;   
+        }
+
+        .top2 a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            margin: 15px;
+            font-weight: 800;
+        }
+
+        .top-left {
+            margin-top: 15px;
+            margin-left: 335px;
+        }
+
+        .top-right input {
+            border: 1px solid ghostwhite;
+            width: 350px;
+            height: 35px;
+            float: right;
+            margin-top: -29px;
+            margin-right: 400px;
+        }
+
+        .left1 {
+            margin-left: 340px;
+            margin-top: 150px;
+            transition: 0.6s;
+            font-size: 14px;
+        }
+
+        .left1 p{
+            color: black;
+            font-weight: 800;
+            line-height: 40px;
+        }
+
+        .left1 a {
+            color: rgb(136, 136, 136);
+            text-decoration: none;
+            
+        }
+
+        .left1 a:hover {
+            color: black;
+            font-weight: 600;
+        }
+        .right1 {
+            margin: 350px;
+            float: right;
+            margin-right:400px;
+            margin-top:-970px;
+            
+        }
+
+        .right1 p{
+            font-size: 18px;
+            font-weight: 800;
+            color: black;
+            height: 35px;
+            width: 200px;
+            border-bottom: 1px solid white;
+        }
+
+        .right1 a {
+           font-size: 14px;
+           text-decoration: none;
+           color: black;
+        }
+
+        #wowslider-container1 {
+            width: 800px;
+            top: 160px;
+            left: 470px;
+            position: absolute;
+        }
+
+        .item h3 {
+            margin-top: 600px;
+            margin-left: 460px;
+        }
+
+        .images {
+            margin-top: -400px;
+            margin-left: 460px;
+            
+        }
+
+        .images .hover2 {
+            background: url(images/LOOKPIN.jpg) no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            width: 180px;
+            height: 180px;
+            transition: 0.2s;
+            background-position: center;
+            border-radius: 5px;
+        }
+
+        .images .hover2:hover {
+            background: url(images/LOOKPIN2.jpg);
+            background-size: 105%;
+            background-position: center;
+        }
+        
+        .images .hover3 {
+            background: url(images/LOOKPIN3.jpg) no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            width: 180px;
+            height: 180px;
+            transition: 0.2s;
+            background-position: center;
+            border-radius: 5px;
+            /* margin-top: -49.8%;
+            float: left;
+            margin-left: 210px; */
+        }
+
+        .images .hover3:hover {
+            background: url(images/LOOKPIN4.jpg);
+            background-size: 105%;
+            background-position: center;
+        }
+        .images .hover4 {
+            background: url(images/LOOKPIN5.jpg) no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            width: 180px;
+            height: 180px;
+            transition: 0.2s;
+            background-position: center;
+            border-radius: 5px;
+            /* margin-top: -49.8%;
+            float: left;
+            margin-left: 420px; */
+        }
+        .images .hover4:hover {
+            background: url(images/LOOKPIN6.jpg);
+            background-size: 105%;
+            background-position: center;
+        }
+        .images .hover5 {
+            background: url(images/LOOKPIN7.jpg) no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            width: 180px;
+            height: 180px;
+            transition: 0.2s;
+            background-position: center;
+            border-radius: 5px;
+            /* margin-top: -49.8%;
+            float: left;
+            margin-left: 630px; */
+        }
+        .images .hover5:hover {
+            background-size: 105%;
+            background-position: center;
+        }
+        .images .hover6 {
+            background: url(images/LOOKPIN8.jpg) no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            width: 180px;
+            height: 180px;
+            transition: 0.2s;
+            background-position: center;
+            border-radius: 5px;
+            /* margin-top: -49.8%;
+            float: left;
+            margin-left: 840px; */
+        }
+        .images .hover6:hover {
+            background: url(images/LOOKPIN9.jpg);
+            background-size: 105%;
+            background-position: center;
+        }
+
+        .text1 {
+            margin-left: 460px;
+        }
+        .text1 a {
+            text-decoration: none;
+            color: rgb(104, 104, 104);
+        }
+        .text2 {
+            margin-left: 190px;
+            margin-top: -80px;
+        }
+        .text2 a {
+            text-decoration: none;
+            color: rgb(104, 104, 104);
+        }
+        .text3 {
+            margin-left: 180px;
+            margin-top: -80px;
+        }
+        .text3 a {
+            text-decoration: none;
+            color: rgb(104, 104, 104);
+        }
+        .text4 {
+            margin-left: 190px;
+            margin-top: -80px;
+        }
+        .text4 a {
+            text-decoration: none;
+            color: rgb(104, 104, 104);
+        }
+        .text5 {
+            margin-left: 180px;
+            margin-top: -80px;
+        }
+        .text5 a {
+            text-decoration: none;
+            color: rgb(104, 104, 104);
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+          <h3>LOOKPIN</h3>
+          <div class="left">
+            <a href="#">최근 본 상품</a>
+          </div>
+          <div class="right">
+            <a href="#">장바구니</a>
+            <a href="#">마이룩핀</a>
+            <a href="#">로그인</a>
+          </div>
+    </div>
+    <div class="top2">
+        <div class="top-left">
+            <a href="#">상품랭킹</a>
+            <a href="#">신상품</a>
+            <a href="#">코디</a>
+            <a href="#">스토어</a>
+            <a href="#">이벤트</a>
+        </div>
+        <div class="top-right">
+            <input type="text" size="45px"placeholder="어떤 상품을 찾으시나요?">
+        </div>
+        
+    </div>
+    <div>
+    <div class="left1">
+        <p>상의</p>
+        <a href="#">반팔티</a><br>
+        <br>
+        <a href="#">셔츠/남방</a><br>
+        <br>
+        <a href="#">긴팔티</a><br>
+        <br>
+        <a href="#">맨투맨</a><br>
+        <br>
+        <a href="#">후드티/아노락</a><br>
+        <br>
+        <a href="#">후드집업</a><br>
+        <br>
+        <a href="#">니트/스웨터</a><br>
+        <br>
+        <a href="#">민소매/나시</a><br>
+        <br>
+        <a href="#">트레이닝상의</a><br>
+      <div class="left2">
+        <p>아우터</p>
+        <a href="#">코트</a><br>
+        <br>
+        <a href="#">점퍼</a><br>
+        <br>
+        <a href="#">자켓</a><br>
+        <br>
+        <a href="#">무스탕</a><br>
+        <br>
+        <a href="#">가디건</a><br>
+        <br>
+        <a href="#">후드집업</a><br>
+        <br>
+        <a href="#">항공점퍼/블루종</a><br>
+        <br>
+        <a href="#">패딩/다운</a><br>
+        <br>
+        <a href="#">수트</a><br>
+      <div class="left3">
+        <p>하의</p>
+        <a href="#">청바지</a><br>
+        <br>
+        <a href="#">슬렉스</a><br>
+        <br>
+        <a href="#">면바지</a><br>
+        <br>
+        <a href="#">트레이닝하의</a><br>
+        <br>
+        <a href="#">반바지</a><br>
+        <br>
+        <a href="#">조거팬츠</a><br>
+      </div>
+      <div>
+        <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container1">
+        <div class="ws_images"><ul>
+            <li><img src="data1/images/6b622765bd5e95f0f0c9ebef45c90775.jpg" alt="6b622765bd5e95f0f0c9ebef45c90775" title="6b622765bd5e95f0f0c9ebef45c90775" id="wows1_0"/></li>
+            <li><img src="data1/images/7aa7c717443d57ec303798aef1b37539.jpg" alt="7aa7c717443d57ec303798aef1b37539" title="7aa7c717443d57ec303798aef1b37539" id="wows1_1"/></li>
+            <li><img src="data1/images/7e9339c1306eee87aa2fcaf7551e0bde.jpg" alt="7e9339c1306eee87aa2fcaf7551e0bde" title="7e9339c1306eee87aa2fcaf7551e0bde" id="wows1_2"/></li>
+            <li><img src="data1/images/37e13794a8ea5e25f8e4c7a8f1a0df11.jpg" alt="37e13794a8ea5e25f8e4c7a8f1a0df11" title="37e13794a8ea5e25f8e4c7a8f1a0df11" id="wows1_3"/></li>
+            <li><img src="data1/images/58119e687f528518d67f425492382391.jpg" alt="58119e687f528518d67f425492382391" title="58119e687f528518d67f425492382391" id="wows1_4"/></li>
+            <li><img src="data1/images/77793ed408bd5b0049c1cd4e83865297.jpg" alt="77793ed408bd5b0049c1cd4e83865297" title="77793ed408bd5b0049c1cd4e83865297" id="wows1_5"/></li>
+            <li><img src="data1/images/c481badf9cfd385736f93c3b7e68d475.jpg" alt="c481badf9cfd385736f93c3b7e68d475" title="c481badf9cfd385736f93c3b7e68d475" id="wows1_6"/></li>
+            <li><a href="http://wowslider.net"><img src="data1/images/d218075b1c0bb206e78d71b8bcab4785.jpg" alt="jquery carousel slider" title="d218075b1c0bb206e78d71b8bcab4785" id="wows1_7"/></a></li>
+            <li><img src="data1/images/e502a42949efab192f67d8ab5b110ef9.jpg" alt="e502a42949efab192f67d8ab5b110ef9" title="e502a42949efab192f67d8ab5b110ef9" id="wows1_8"/></li>
+        </ul></div>
+        <div class="ws_bullets"><div>
+            <a href="#" title="6b622765bd5e95f0f0c9ebef45c90775"><span><img src="data1/tooltips/6b622765bd5e95f0f0c9ebef45c90775.jpg" alt="6b622765bd5e95f0f0c9ebef45c90775"/>1</span></a>
+            <a href="#" title="7aa7c717443d57ec303798aef1b37539"><span><img src="data1/tooltips/7aa7c717443d57ec303798aef1b37539.jpg" alt="7aa7c717443d57ec303798aef1b37539"/>2</span></a>
+            <a href="#" title="7e9339c1306eee87aa2fcaf7551e0bde"><span><img src="data1/tooltips/7e9339c1306eee87aa2fcaf7551e0bde.jpg" alt="7e9339c1306eee87aa2fcaf7551e0bde"/>3</span></a>
+            <a href="#" title="37e13794a8ea5e25f8e4c7a8f1a0df11"><span><img src="data1/tooltips/37e13794a8ea5e25f8e4c7a8f1a0df11.jpg" alt="37e13794a8ea5e25f8e4c7a8f1a0df11"/>4</span></a>
+            <a href="#" title="58119e687f528518d67f425492382391"><span><img src="data1/tooltips/58119e687f528518d67f425492382391.jpg" alt="58119e687f528518d67f425492382391"/>5</span></a>
+            <a href="#" title="77793ed408bd5b0049c1cd4e83865297"><span><img src="data1/tooltips/77793ed408bd5b0049c1cd4e83865297.jpg" alt="77793ed408bd5b0049c1cd4e83865297"/>6</span></a>
+            <a href="#" title="c481badf9cfd385736f93c3b7e68d475"><span><img src="data1/tooltips/c481badf9cfd385736f93c3b7e68d475.jpg" alt="c481badf9cfd385736f93c3b7e68d475"/>7</span></a>
+            <a href="#" title="d218075b1c0bb206e78d71b8bcab4785"><span><img src="data1/tooltips/d218075b1c0bb206e78d71b8bcab4785.jpg" alt="d218075b1c0bb206e78d71b8bcab4785"/>8</span></a>
+            <a href="#" title="e502a42949efab192f67d8ab5b110ef9"><span><img src="data1/tooltips/e502a42949efab192f67d8ab5b110ef9.jpg" alt="e502a42949efab192f67d8ab5b110ef9"/>9</span></a>
+        </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap image slider</a> by WOWSlider.com v9.0</div>
+        <div class="ws_shadow"></div>
+        </div>	
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+        <script type="text/javascript" src="engine1/script.js"></script>
+        <!-- End WOWSlider.com BODY section -->
+      </div>
+      <div class="right1">
+        <p>인기검색어</p>
+        <a href="#"> <span style="font-size: 17px; color:rgb(15, 80, 177)">1.</span>오버핏</a><br><br>
+        <a href="#"> <span style="font-size: 17px; color:rgb(15, 80, 177)">2.</span>와이드</a><br><br>
+        <a href="#"> <span style="font-size: 17px; color:rgb(15, 80, 177)">3.</span>세미와이드</a><br><br>
+        <a href="#"> <span style="font-size: 17px; color:rgb(15, 80, 177)">4.</span>밴딩</a><br><br>
+        <a href="#"> <span style="font-size: 17px; color:rgb(15, 80, 177)">5.</span>나이키</a><br><br>
+        <a href="#"> <span style="font-size: 17px; color:rgb(15, 80, 177)">6.</span>블레이저</a><br><br>
+        <a href="#"> <span style="font-size: 17px; color:rgb(15, 80, 177)">7.</span>헨리넥</a><br><br>
+        <a href="#"> <span style="font-size: 17px; color:rgb(15, 80, 177)">8.</span>후드티</a><br><br>
+        <a href="#"> <span style="font-size: 17px; color:rgb(15, 80, 177)">9.</span>머슬핏</a><br><br>
+        <a href="#"> <span style="font-size: 17px; color:rgb(15, 80, 177)">10.</span>레이어드</a><br><br>
+      </div>
+
+    <div class="ws_shadow"></div>
+    </div>	
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
+    <!-- End WOWSlider.com BODY section -->
+</div>
+        
+    <div class="images">
+        <h3>상품랭킹</h3>
+        <a href="#" class="hover2"></a>
+        <a href="#" class="hover3"></a>
+        <a href="#" class="hover4"></a>
+        <a href="#" class="hover5"></a>
+        <a href="#" class="hover6"></a>
+    </div>
+    <div class="text1">
+        <a href="#"><span style="color:rgb(104, 104, 104)">커먼로우</span></a> <br>
+        <a href="#"><span style="font-weight: 500; color:black; font-size: 13.5px;">DC 컷팅 세미와이드 데님팬츠</span></a><br>
+        <a href="#"><span style="color: black;">19,900원</span></a><br>
+        <a href="#"><span style="color: red;">★ 4.5</span> (269명 평가)</a>
+        <div class="text2">
+        <a href="#"><span style="color:rgb(104, 104, 104)">엘리스</span></a> <br>
+        <a href="#"><span style="font-weight: 500; color:black; font-size: 13.5px;">반스 올드스쿨 블랙 슬립온...</span></a><br>
+        <a href="#"><span style="color: black;">47,900원</span></a><br>
+        <a href="#"><span style="color: red;">★ 4.8</span> (274명 평가)</a>
+        <div class="text3">
+        <a href="#"><span style="color:rgb(104, 104, 104)">독보남</span></a> <br>
+        <a href="#"><span style="font-weight: 500; color:black; font-size: 13.5px;">[1+1] 가성비 끝판왕 9부10...</span></a><br>
+        <a href="#"><span style="color: black;">27,900원</span></a><br>
+        <a href="#"><span style="color: red;">★ 4.7</span> (999+명 평가)</a>
+        <div class="text4">
+        <a href="#"><span style="color:rgb(104, 104, 104)">로댄티</span></a> <br>
+        <a href="#"><span style="font-weight: 500; color:black; font-size: 13.5px;">[당일출고] (1+1+1)머슬핏 ...</span></a><br>
+        <a href="#"><span style="color: black;">26,600원</span></a><br>
+        <a href="#"><span style="color: red;">★ 4.7</span> (999+명 평가)</a>
+        <div class="text5">
+            <a href="#"><span style="color:rgb(104, 104, 104)">아르마다</span></a> <br>
+            <a href="#"><span style="font-weight: 500; color:black; font-size: 13.5px;">나이키 정품 모자 레거시91 ...</span></a><br>
+            <a href="#"><span style="color: black;">21,900원</span></a><br>
+            <a href="#"><span style="color: red;">★ 4.7</span> (200명 평가)</a>
+        
+    </div>
+</body>
+</html>
